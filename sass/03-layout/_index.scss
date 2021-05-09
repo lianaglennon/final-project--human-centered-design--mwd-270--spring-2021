@@ -5,3 +5,132 @@
 // <main>, <footer>, and BEM classes.
 // example.
 //
+
+#logo{
+    width: 45%;
+    max-height: auto;
+    display: flex;
+    float: left;
+    padding: 10px;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #none;
+  position: fixed;
+  top: 30px;
+  width: 100%;
+}
+
+#navbar a {
+  float: right;
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: $header--font;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background: $primary--color;
+
+  @media (max-width: $breakpoint--tablet) {
+    width: $width--tablet;
+  }
+
+  @media (max-width: $breakpoint--phone) {
+    width: $width--phone;
+  }
+}
+
+#heroshot{
+    background: url('../img/background.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    width: 100%;
+    background: $primary--color;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: $breakpoint--phone) {
+  .column {
+    width: $width--phone;
+  }
+}
+
+
+.column p{
+    width: 100%;
+}
+
+.column img{
+    width: 100%;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    padding: 20px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: $secondary--color;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: $tertiary--color;
+}
+
+#contactcontainer {
+  border-radius: 5px;
+  background-color: $primary--color;
+  padding: 20px;
+  font-family: $header--font;
+}
+
+.spacer{
+    margin-top: 200px;
+}

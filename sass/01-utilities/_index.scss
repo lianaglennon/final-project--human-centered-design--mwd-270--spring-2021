@@ -4,3 +4,16 @@
 // Import the basic utilities that other components in your project will require that
 // don’t change. For example, color palettes, global variables, mixins, etc.
 //
+
+$breakpoint--tablet: 1100px;
+$breakpoint--phone:  840px;
+
+$width--tablet: 100%;
+$width--phone: 100%;
+
+$primary--color: #CFE7F2;
+$secondary--color: #D9E3C9;
+$tertiary--color: #EDE5D9;
+
+$header--font: 'Bebas Neue';
+$paragraph--font: 'Montserrat', sans-serif;

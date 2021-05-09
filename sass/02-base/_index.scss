@@ -9,3 +9,36 @@
 //
 @import 'reset';
 @import 'body';
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: $header--font;
+  text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: $paragraph--font;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
