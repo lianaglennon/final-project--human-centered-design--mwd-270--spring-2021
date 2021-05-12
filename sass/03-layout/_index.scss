@@ -169,3 +169,11 @@
 #mywork a{
     color: black;
 }
+
+.theatrecontent {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: $primary--color;
+}
+
