@@ -158,7 +158,7 @@
     }
 }
 
-#mywork p, h1{
+.mywork p, h1{
     text-align: center;
     padding: 15px;
     height: 100%;
@@ -166,7 +166,7 @@
     overflow: auto;
 }
 
-#mywork a{
+.mywork a{
     color: black;
 }
 
@@ -176,4 +176,3 @@
     padding: 15px;
     background-color: $primary--color;
 }
-
