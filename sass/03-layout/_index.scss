@@ -9,6 +9,7 @@
 #logo{
     width: 45%;
     max-height: auto;
+    margin-top: 0px;
     display: flex;
     float: left;
     padding: 10px;
@@ -22,9 +23,9 @@
 
 #navbar {
   overflow: hidden;
-  background-color: #none;
-  position: fixed;
-  top: 30px;
+  background-color: transparent;
+  position: sticky;
+  top: 20px;
   width: 100%;
 }
 
@@ -33,9 +34,11 @@
   display: flex;
   color: black;
   text-align: center;
+  margin-top: 30px;
   padding: 14px 16px;
   text-decoration: none;
   font-family: $header--font;
+  font-size: 2rem;
 }
 
 #container {
@@ -100,18 +103,69 @@
     padding: 20px;
 }
 
-
 #contactcontainer {
   border-radius: 5px;
+  height: 100%;
   background-color: $primary--color;
   padding: 20px;
   font-family: $header--font;
 }
 
-#contacttitle{
-    width: 100%;
-    text-align: center;
-}
 .spacer{
     margin-top: 200px;
+    height: 10%;
+}
+
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: .3s;
+    background-color: $primary--color;
+    
+    &:hover &__image {
+        filter: grayscale(1);
+    }
+    
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+    }
+    
+    &__link {
+        margin: 2px;
+        overflow: hidden;
+        
+        &:hover {
+            .gallery__image {
+                filter: grayscale(0);
+            }
+        }
+    }
+    
+    &__thumb {
+        position: relative;
+    }
+    
+    &__image {
+        display: block;
+        width: 100%;
+        transition: .3s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#mywork p, h1{
+    text-align: center;
+    padding: 15px;
+    height: 100%;
+    background-color: $primary--color;
+    overflow: auto;
+}
+
+#mywork a{
+    color: black;
 }
